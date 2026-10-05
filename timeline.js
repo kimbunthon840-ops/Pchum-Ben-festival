@@ -15,9 +15,15 @@ async function initTimeline() {
     if (window.DataStore) {
       timelineData = await window.DataStore.getTimeline();
     } else {
-      const res = await fetch('data/timeline.json');
-      if (res.ok) {
-        timelineData = await res.json();
+      try {
+        const res = await fetch('data/timeline.json');
+        if (res.ok) timelineData = await res.json();
+      } catch (e) {}
+      if (!timelineData || timelineData.length === 0) {
+        try {
+          const res = await fetch('timeline.json');
+          if (res.ok) timelineData = await res.json();
+        } catch (e) {}
       }
     }
     renderTimeline();

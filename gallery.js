@@ -136,7 +136,7 @@ function renderGallery() {
 
   container.innerHTML = filtered.map(item => `
     <div class="gallery-item zoom-in" onclick="openGalleryLightbox('${item.src}')" title="Click to view fullscreen">
-      <img src="${item.src}" alt="${item.titleEn}" loading="lazy">
+      <img src="${item.src}" alt="${item.titleEn}" loading="lazy" onerror="this.onerror=null;this.src=this.src.split('/').pop();">
       <div class="gallery-overlay">
         <span class="badge badge-gold" style="align-self: flex-start; margin-bottom: 8px;">
           ${item.category.toUpperCase()}

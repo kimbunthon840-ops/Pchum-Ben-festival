@@ -26,8 +26,16 @@ async function initCountdown() {
     if (window.DataStore) {
       data = await window.DataStore.getDates();
     } else {
-      const res = await fetch('data/dates.json');
-      if (res.ok) data = await res.json();
+      try {
+        const res = await fetch('data/dates.json');
+        if (res.ok) data = await res.json();
+      } catch (e) {}
+      if (!data) {
+        try {
+          const res = await fetch('dates.json');
+          if (res.ok) data = await res.json();
+        } catch (e) {}
+      }
     }
 
     if (data && data.years) {

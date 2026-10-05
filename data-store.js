@@ -665,35 +665,35 @@ const FALLBACK_TIMELINE = [
   }
 ];
 
+async function robustFetchJson(primaryPath, fallbackObj) {
+  try {
+    const res = await fetch(primaryPath);
+    if (res.ok) return await res.json();
+  } catch (e) {}
+  
+  // Try root filename fallback (e.g. 'dates.json' if 'data/dates.json' was requested)
+  const filename = primaryPath.split('/').pop();
+  if (filename !== primaryPath) {
+    try {
+      const res = await fetch(filename);
+      if (res.ok) return await res.json();
+    } catch (e) {}
+  }
+  
+  return fallbackObj;
+}
+
 const DataStore = {
   async getDates() {
-    try {
-      const res = await fetch('data/dates.json');
-      if (res.ok) return await res.json();
-    } catch (e) {
-      console.warn('Loading fallback dates data:', e.message);
-    }
-    return FALLBACK_DATES;
+    return await robustFetchJson('data/dates.json', FALLBACK_DATES);
   },
 
   async getPagodas() {
-    try {
-      const res = await fetch('data/pagodas.json');
-      if (res.ok) return await res.json();
-    } catch (e) {
-      console.warn('Loading fallback pagodas data:', e.message);
-    }
-    return FALLBACK_PAGODAS;
+    return await robustFetchJson('data/pagodas.json', FALLBACK_PAGODAS);
   },
 
   async getTimeline() {
-    try {
-      const res = await fetch('data/timeline.json');
-      if (res.ok) return await res.json();
-    } catch (e) {
-      console.warn('Loading fallback timeline data:', e.message);
-    }
-    return FALLBACK_TIMELINE;
+    return await robustFetchJson('data/timeline.json', FALLBACK_TIMELINE);
   }
 };
 

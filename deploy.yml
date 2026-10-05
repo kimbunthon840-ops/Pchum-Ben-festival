@@ -1,5 +1,5 @@
 # GitHub Actions Workflow for Pchum Ben Cultural Portal
-# Deploys static site to GitHub Pages seamlessly without Jekyll errors
+# Deploys static site to GitHub Pages seamlessly with auto-reconstructed directory structure
 
 name: Deploy Pchum Ben Cultural Portal to GitHub Pages
 
@@ -29,6 +29,75 @@ jobs:
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
+
+      - name: Reconstruct and Verify Directory Structure
+        run: |
+          echo "Organizing files into proper directory hierarchy..."
+          mkdir -p css js data img/icons img/hero img/food img/pagodas img/rituals lib/animate lib/bootstrap lib/lightbox
+
+          # Reconstruct CSS
+          for f in style.css khmer-fonts.css responsive.css; do
+            if [ -f "$f" ] && [ ! -f "css/$f" ]; then cp "$f" css/; fi
+          done
+
+          # Reconstruct JS
+          for f in main.js lang-switch.js data-store.js countdown.js timeline.js gallery.js; do
+            if [ -f "$f" ] && [ ! -f "js/$f" ]; then cp "$f" js/; fi
+          done
+
+          # Reconstruct JSON data
+          for f in dates.json pagodas.json timeline.json; do
+            if [ -f "$f" ] && [ ! -f "data/$f" ]; then cp "$f" data/; fi
+          done
+
+          # Reconstruct Libraries
+          if [ -f "bootstrap.min.css" ] && [ ! -f "lib/bootstrap/bootstrap.min.css" ]; then cp "bootstrap.min.css" lib/bootstrap/; fi
+          if [ -f "animate.min.css" ] && [ ! -f "lib/animate/animate.min.css" ]; then cp "animate.min.css" lib/animate/; fi
+          if [ -f "lightbox.css" ] && [ ! -f "lib/lightbox/lightbox.css" ]; then cp "lightbox.css" lib/lightbox/; fi
+          if [ -f "lightbox.js" ] && [ ! -f "lib/lightbox/lightbox.js" ]; then cp "lightbox.js" lib/lightbox/; fi
+
+          # Reconstruct Images - Icons
+          for f in favicon.svg logo.svg lotus.svg; do
+            if [ -f "$f" ] && [ ! -f "img/icons/$f" ]; then cp "$f" img/icons/; fi
+          done
+
+          # Reconstruct Images - Hero
+          for f in hero-main.jpg hero-banner.jpg; do
+            if [ -f "$f" ] && [ ! -f "img/hero/$f" ]; then cp "$f" img/hero/; fi
+          done
+
+          # Reconstruct Images - Food
+          for f in num-ansom.jpg num-korm.jpg kralan.jpg samlor-kari.jpg; do
+            if [ -f "$f" ] && [ ! -f "img/food/$f" ]; then cp "$f" img/food/; fi
+          done
+
+          # Reconstruct Images - Pagodas
+          for f in angkor-pagoda.jpg wat-ounalom.jpg wat-phnom.jpg; do
+            if [ -f "$f" ] && [ ! -f "img/pagodas/$f" ]; then cp "$f" img/pagodas/; fi
+          done
+
+          # Reconstruct Images - Rituals
+          for f in bangskol.jpg bos-bay-ben.jpg candle-procession.jpg tak-bat.jpg; do
+            if [ -f "$f" ] && [ ! -f "img/rituals/$f" ]; then cp "$f" img/rituals/; fi
+          done
+
+          # Mirror subfolder files back to root so both nested and flat paths resolve
+          cp -n css/* . 2>/dev/null || true
+          cp -n js/* . 2>/dev/null || true
+          cp -n data/* . 2>/dev/null || true
+          cp -n lib/bootstrap/* . 2>/dev/null || true
+          cp -n lib/animate/* . 2>/dev/null || true
+          cp -n lib/lightbox/* . 2>/dev/null || true
+          cp -n img/icons/* . 2>/dev/null || true
+          cp -n img/hero/* . 2>/dev/null || true
+          cp -n img/food/* . 2>/dev/null || true
+          cp -n img/pagodas/* . 2>/dev/null || true
+          cp -n img/rituals/* . 2>/dev/null || true
+
+          # Ensure .nojekyll exists so files starting with underscore or dots are preserved
+          touch .nojekyll
+
+          echo "Directory structure verified successfully."
 
       - name: Upload Static Web Artifact
         uses: actions/upload-pages-artifact@v3
