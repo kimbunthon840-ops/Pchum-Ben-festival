@@ -7,6 +7,33 @@
   <meta name="description" content="Official Pchum Ben dates from 2024 to 2030: Kann Ben Day 1, Pchum Thom Day 15, Cambodia public holidays, and lunar calendar explanation.">
   <link rel="icon" type="image/svg+xml" href="img/icons/favicon.svg">
   
+  <!-- Resilient Self-Healing Asset Fallback for GitHub Pages & Root/Subfolder Hosting -->
+  <script>
+    (function() {
+      window.addEventListener('error', function(e) {
+        var el = e.target;
+        if (!el || !el.tagName || el.dataset?.fallbackApplied) return;
+        el.dataset.fallbackApplied = 'true';
+
+        if (el.tagName === 'LINK' && el.rel === 'stylesheet' && el.href) {
+          var file = el.href.split('/').pop().split('?')[0];
+          if (file) el.href = file;
+        } else if (el.tagName === 'IMG' && el.src) {
+          var file = el.src.split('/').pop().split('?')[0];
+          if (file) el.src = file;
+        } else if (el.tagName === 'SCRIPT' && el.src) {
+          var file = el.src.split('/').pop().split('?')[0];
+          if (file) {
+            var s = document.createElement('script');
+            s.src = file;
+            s.dataset.fallbackApplied = 'true';
+            document.head.appendChild(s);
+          }
+        }
+      }, true);
+    })();
+  </script>
+  
   <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="lib/animate/animate.min.css">
   <link rel="stylesheet" href="lib/lightbox/lightbox.css">
