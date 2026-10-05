@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Khmer & Multilingual Typography System - Pchum Ben Project
+   Fonts: Moul (Headings), Kantumruy Pro & Battambang (Body), Cinzel (Latin Display)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@400;700;900&family=Cinzel:wght@500;600;700;800;900&family=Kantumruy+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Moul&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-kh-title: 'Moul', 'Khmer OS Muol', cursive, serif;
+  --font-kh-body: 'Kantumruy Pro', 'Battambang', 'Khmer OS Siemreap', system-ui, sans-serif;
+  --font-en-title: 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-en-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Base Body Typography */
+body {
+  font-family: var(--font-en-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Khmer Language Active State */
+html[lang="km"] body,
+.khmer-mode body,
+[data-lang="km"] {
+  font-family: var(--font-kh-body);
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+}
+
+/* Display Titles & Headings */
+.font-moul,
+.kh-title,
+html[lang="km"] h1,
+html[lang="km"] h2,
+html[lang="km"] h3,
+html[lang="km"] .hero-title,
+html[lang="km"] .section-title {
+  font-family: var(--font-kh-title);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+/* English Display Headings */
+.font-cinzel,
+.en-title,
+html[lang="en"] h1,
+html[lang="en"] h2,
+html[lang="en"] h3,
+html[lang="en"] .hero-title,
+html[lang="en"] .section-title {
+  font-family: var(--font-en-title);
+  letter-spacing: 0.04em;
+}
+
+/* Khmer text helpers */
+.font-kantumruy {
+  font-family: var(--font-kh-body);
+}
+
+.kh-text-subtle {
+  font-size: 0.95em;
+  opacity: 0.88;
+}
+
+/* Smooth font rendering */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}

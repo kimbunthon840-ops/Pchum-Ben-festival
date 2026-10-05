@@ -1,0 +1,187 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN & MOBILE OPTIMIZATIONS - Pchum Ben Project
+   Breakpoints: 1200px, 992px, 768px, 576px, 400px
+   ========================================================================== */
+
+@media (max-width: 1199.98px) {
+  .nav-links {
+    gap: 16px;
+  }
+  .nav-item a {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .mobile-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(7, 10, 18, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 30px;
+    gap: 18px;
+    border-bottom: 1px solid var(--border-gold);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item .nav-link,
+  .nav-item > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.05rem;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .nav-dropdown .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.04);
+    border-left: 2px solid var(--gold-400);
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: 4px 0 10px;
+    pointer-events: auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .nav-dropdown .dropdown-menu::before {
+    display: none;
+  }
+
+  .dropdown-item {
+    padding: 8px 10px;
+  }
+
+  .dropdown-item:hover {
+    transform: none;
+  }
+
+  .dropdown-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1.15rem;
+  }
+
+  .hero-section {
+    padding: 120px 0 60px;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .countdown-wrapper {
+    margin: 0 auto;
+  }
+
+  .section-padding {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-lead {
+    font-size: 0.98rem;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .timeline-card {
+    padding: 24px 18px;
+  }
+
+  .timeline-ritual-step {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-title {
+    font-size: 1.05rem;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .btn-primary, .btn-outline {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .countdown-box {
+    padding: 10px 6px;
+  }
+
+  .countdown-num {
+    font-size: 1.6rem;
+  }
+}

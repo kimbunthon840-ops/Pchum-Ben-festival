@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo & Video Gallery | Pchum Ben Visual Heritage</title>
+  <meta name="description" content="Immerse in the visual splendor of Pchum Ben: photography of pre-dawn Bos Bay Ben, ancient pagodas, sacred offerings, and cultural documentaries.">
+  <link rel="icon" type="image/svg+xml" href="img/icons/favicon.svg">
+  
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/animate/animate.min.css">
+  <link rel="stylesheet" href="lib/lightbox/lightbox.css">
+  <link rel="stylesheet" href="css/khmer-fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="img/icons/logo.svg" alt="Pchum Ben Sacred Lotus Logo">
+        <div class="brand-text">
+          <span class="brand-title" data-en="PCHUM BEN" data-kh="បុណ្យភ្ជុំបិណ្ឌ">PCHUM BEN</span>
+          <span class="brand-subtitle" data-en="Ancestors' Day" data-kh="ពិធីបុណ្យជាតិខ្មែរ">Ancestors' Day</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <ul class="nav-links" id="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link" data-en="Home" data-kh="ទំព័រដើម">Home</a></li>
+
+        <!-- Pillar 2: Heritage (Dropdown) -->
+        <li class="nav-item nav-dropdown">
+          <a href="about.html" class="nav-link dropdown-toggle" data-en="Heritage" data-kh="មរតក">
+            <span data-en="Heritage" data-kh="មរតក">Heritage</span>
+            <span class="dropdown-caret">▾</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="about.html" class="dropdown-item">
+                <span class="dropdown-icon">☸️</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="About Pchum Ben" data-kh="អំពីបុណ្យភ្ជុំបិណ្ឌ">About Pchum Ben</div>
+                  <div class="dropdown-desc" data-en="Spiritual significance & 7 generations" data-kh="អត្ថន័យ និងបុព្វការីជន ៧ សន្តាន">Spiritual significance & 7 generations</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="history.html" class="dropdown-item">
+                <span class="dropdown-icon">📜</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Origins & Legends" data-kh="ប្រវត្តិ និងរឿងព្រេង">Origins & Legends</div>
+                  <div class="dropdown-desc" data-en="King Bimbisara & the Preta realm" data-kh="រឿងព្រះបាទពិម្ពិសារ និងកំណើតប្រេត">King Bimbisara & the Preta realm</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="timeline.html" class="dropdown-item">
+                <span class="dropdown-icon">📅</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="15 Sacred Days" data-kh="១៥ ថ្ងៃកាន់បិណ្ឌ">15 Sacred Days</div>
+                  <div class="dropdown-desc" data-en="Interactive Kann Ben 1 to Pchum Thom" data-kh="កាលវិភាគពិធីបុណ្យ ១៥ ថ្ងៃពេញ">Interactive Kann Ben 1 to Pchum Thom</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Pillar 3: Traditions (Dropdown) -->
+        <li class="nav-item nav-dropdown">
+          <a href="traditions.html" class="nav-link dropdown-toggle" data-en="Traditions" data-kh="ទំនៀមទម្លាប់">
+            <span data-en="Traditions" data-kh="ទំនៀមទម្លាប់">Traditions</span>
+            <span class="dropdown-caret">▾</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="traditions.html" class="dropdown-item">
+                <span class="dropdown-icon">🪔</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Rituals & Customs" data-kh="ពិធីសាសនា">Rituals & Customs</div>
+                  <div class="dropdown-desc" data-en="Bos Bay Ben, Bangskol, Sand Stupas" data-kh="បោះបាយបិណ្ឌ បង្សុកូល ពូនភ្នំខ្សាច់">Bos Bay Ben, Bangskol, Sand Stupas</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="food.html" class="dropdown-item">
+                <span class="dropdown-icon">🍲</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Sacred Cuisine" data-kh="ម្ហូប និងនំប្រពៃណី">Sacred Cuisine</div>
+                  <div class="dropdown-desc" data-en="Num Ansom, Num Kom, Kralan" data-kh="នំអន្សម នំគម ក្រឡានដុតឫស្សី">Num Ansom, Num Kom, Kralan</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Pillar 4: Pagodas -->
+        <li class="nav-item"><a href="pagodas.html" class="nav-link" data-en="Pagodas" data-kh="វត្តអារាម">Pagodas</a></li>
+
+        <!-- Pillar 5: Gallery -->
+        <li class="nav-item"><a href="gallery.html" class="nav-link active" data-en="Gallery" data-kh="កម្រងរូបភាព">Gallery</a></li>
+
+        <!-- Pillar 6: Visitor Info (Dropdown) -->
+        <li class="nav-item nav-dropdown">
+          <a href="guide.html" class="nav-link dropdown-toggle" data-en="Visitor Info" data-kh="ព័ត៌មាន">
+            <span data-en="Visitor Info" data-kh="ព័ត៌មាន">Visitor Info</span>
+            <span class="dropdown-caret">▾</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="guide.html" class="dropdown-item">
+                <span class="dropdown-icon">🧭</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Etiquette & Guide" data-kh="ការណែនាំ និងក្រមសីលធម៌">Etiquette & Guide</div>
+                  <div class="dropdown-desc" data-en="Temple dress codes, dos & don'ts" data-kh="ការស្លៀកពាក់ និងក្រមសីលធម៌វត្ត">Temple dress codes, dos & don'ts</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" class="dropdown-item">
+                <span class="dropdown-icon">🗓️</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Festival Dates" data-kh="កាលបរិច្ឆេទតាមឆ្នាំ">Festival Dates</div>
+                  <div class="dropdown-desc" data-en="2024–2030 lunisolar & holiday schedule" data-kh="កាលវិភាគផ្លូវការ ២០២៤-២០៣០">2024–2030 lunisolar & holiday schedule</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="dropdown-item">
+                <span class="dropdown-icon">✉️</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Contact & Feedback" data-kh="ទំនាក់ទំនង">Contact & Feedback</div>
+                  <div class="dropdown-desc" data-en="Connect with our cultural team" data-kh="ផ្ញើសារ ឬចូលរួមចំណែក">Connect with our cultural team</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-search-trigger" id="btn-search-open" title="Quick Search (Ctrl + K)">
+          <span>🔍</span>
+          <span class="d-none d-md-inline" data-en="Search" data-kh="ស្វែងរក">Search</span>
+          <kbd class="d-none d-lg-inline">Ctrl K</kbd>
+        </button>
+        <button class="btn-audio" title="Play Temple Bell Ambiance" aria-label="Toggle Temple Sound">🔔</button>
+        <button class="btn-lang btn-lang-toggle" aria-label="Switch Language"><span class="flag">🌐</span> English</button>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="section-padding" style="padding-top: 150px; background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container text-center">
+      <span class="badge badge-gold mb-3" data-en="VISUAL MEMORIES" data-kh="ទិដ្ឋភាពវប្បធម៌ដ៏រស់រវើក">VISUAL MEMORIES</span>
+      <h1 class="hero-title" style="font-size: clamp(2.2rem, 4vw, 3.5rem); margin-bottom: 16px;">
+        <span class="gold-accent" data-en="Photo & Video Gallery" data-kh="កម្រងរូបភាព និងវីដេអូឯកសារ">Photo & Video Gallery</span>
+      </h1>
+      <p class="section-desc" style="max-width: 760px; margin: 0 auto;" data-en="Click any photo to view in high resolution fullscreen lightbox, or filter by category." data-kh="ចុចលើរូបភាពដើម្បីពង្រីកមើលទំហំធំ និងជ្រើសរើសប្រភេទរូបភាពតាមការចូលចិត្ត។">
+        Click any photo to view in high resolution fullscreen lightbox, or filter by category.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Grid Section -->
+  <main class="section-padding">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <div class="filter-group">
+          <button class="gallery-filter-btn filter-btn active" data-filter="all" data-en="All Media" data-kh="ទាំងអស់">All Media</button>
+          <button class="gallery-filter-btn filter-btn" data-filter="rituals" data-en="Rituals & Bos Bay Ben" data-kh="ពិធីសាសនា">Rituals & Bos Bay Ben</button>
+          <button class="gallery-filter-btn filter-btn" data-filter="pagodas" data-en="Sacred Pagodas" data-kh="វត្តអារាម">Sacred Pagodas</button>
+          <button class="gallery-filter-btn filter-btn" data-filter="food" data-en="Traditional Cuisine" data-kh="ម្ហូប និងនំ">Traditional Cuisine</button>
+        </div>
+        <div style="color: var(--text-muted); font-size: 0.88rem;">
+          💡 <span data-en="Press ESC or Arrow keys in lightbox" data-kh="ចុចប៊ូតុងព្រួញដើម្បីប្តូររូបភាព">Press ESC or Arrow keys in lightbox</span>
+        </div>
+      </div>
+
+      <!-- Gallery Items Grid -->
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Rendered by js/gallery.js -->
+      </div>
+
+      <!-- Video Documentaries Showcase -->
+      <div class="mt-5 pt-5">
+        <div class="section-header">
+          <span class="badge badge-pink section-tag" data-en="CINEMATIC HERITAGE" data-kh="ភាពយន្តឯកសារ">CINEMATIC HERITAGE</span>
+          <h2 class="section-title" data-en="Documentary & Spiritual Recordings" data-kh="វីដេអូឯកសារពិធីបុណ្យភ្ជុំបិណ្ឌ">
+            Documentary & Spiritual Recordings
+          </h2>
+          <p class="section-desc" data-en="Witness the sacred sounds of Pali chanting, early morning Bos Bay Ben, and the festival atmosphere." data-kh="ស្តាប់សំឡេងធម៌ទេសនា និងទស្សនាទិដ្ឋភាពជាក់ស្តែងនៃការប្រារព្ធពិធីបុណ្យភ្ជុំបិណ្ឌ។">
+            Witness the sacred sounds of Pali chanting, early morning Bos Bay Ben, and the festival atmosphere.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Video 1 -->
+          <div class="col-md-6">
+            <div class="card-culture">
+              <div class="card-media" style="height: 280px; position: relative;">
+                <img src="img/rituals/bos-bay-ben.jpg" alt="Video cover: Bos Bay Ben Ritual at 4 AM">
+                <div class="card-media-overlay" style="display: flex; align-items: center; justify-content: center;">
+                  <button class="btn-primary" style="width: 60px; height: 60px; border-radius: 50%; padding: 0; font-size: 1.5rem;" onclick="openGalleryLightbox('img/rituals/bos-bay-ben.jpg')">
+                    ▶
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <span class="badge badge-gold mb-2">DOCUMENTARY</span>
+                <h3 class="card-title" data-en="Voices in the Dark: The 4:00 AM Bos Bay Ben" data-kh="ពន្លឺទៀននាវេលាទៀបភ្លឺ៖ ពិធីបោះបាយបិណ្ឌ">
+                  Voices in the Dark: The 4:00 AM Bos Bay Ben
+                </h3>
+                <p class="card-text" data-en="A cultural study of the mysterious and heartwarming dawn circumambulation in Cambodian rural pagodas." data-kh="ទិដ្ឋភាពដ៏ជ្រះថ្លា និងអាថ៌កំបាំងនៃការដើរប្រទក្សិណបោះបាយបិណ្ឌតាមទីជនបទនៃប្រទេសកម្ពុជា។">
+                  A cultural study of the mysterious and heartwarming dawn circumambulation in Cambodian rural pagodas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="col-md-6">
+            <div class="card-culture">
+              <div class="card-media" style="height: 280px; position: relative;">
+                <img src="img/rituals/bangskol.jpg" alt="Video cover: Bangskol Chanting by Monks">
+                <div class="card-media-overlay" style="display: flex; align-items: center; justify-content: center;">
+                  <button class="btn-primary" style="width: 60px; height: 60px; border-radius: 50%; padding: 0; font-size: 1.5rem;" onclick="openGalleryLightbox('img/rituals/bangskol.jpg')">
+                    ▶
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <span class="badge badge-pink mb-2">SACRED CHANT</span>
+                <h3 class="card-title" data-en="Bangskol: Chanting for the Departed" data-kh="សូត្រធម៌បង្សុកូលឧទ្ទិសមហាកុសល">
+                  Bangskol: Chanting for the Departed
+                </h3>
+                <p class="card-text" data-en="Listen to the resonant Pali stanzas recited by Buddhist monks to ease suffering across karmic realms." data-kh="ការសូត្រព្រះធម៌ជាភាសាបាលីយ៉ាងពិរោះរណ្តំដោយព្រះសង្ឃ ដើម្បីឧទ្ទិសកុសលដល់បុព្វការីជន។">
+                  Listen to the resonant Pali stanzas recited by Buddhist monks to ease suffering across karmic realms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="brand-logo mb-3">
+            <img src="img/icons/logo.svg" alt="Pchum Ben Logo">
+            <div class="brand-text">
+              <span class="brand-title">PCHUM BEN</span>
+              <span class="brand-subtitle">Cultural Portal</span>
+            </div>
+          </a>
+          <p class="footer-desc" data-en="A dedicated cultural encyclopedia preserving and sharing the living traditions, sacred rituals, and spiritual beauty of Cambodia's Pchum Ben Ancestors' Day festival." data-kh="គេហទំព័រផ្សព្វផ្សាយ និងអភិរក្សវប្បធម៌ ប្រពៃណី និងជំនឿសាសនាដ៏ពិសិដ្ឋនៃពិធីបុណ្យភ្ជុំបិណ្ឌខ្មែរ។">
+            A dedicated cultural encyclopedia preserving and sharing the living traditions, sacred rituals, and spiritual beauty of Cambodia's Pchum Ben Ancestors' Day festival.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col-nav">
+          <h4 class="footer-title" data-en="Explore" data-kh="ទំព័រ">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" data-en="About Festival" data-kh="អំពីបុណ្យ">About Festival</a></li>
+            <li><a href="history.html" data-en="Origins & History" data-kh="ប្រវត្តិ និងរឿងព្រេង">Origins & History</a></li>
+            <li><a href="timeline.html" data-en="15-Day Timeline" data-kh="កាលវិភាគ ១៥ ថ្ងៃ">15-Day Timeline</a></li>
+            <li><a href="traditions.html" data-en="Rituals & Customs" data-kh="ទំនៀមទម្លាប់">Rituals & Customs</a></li>
+            <li><a href="food.html" data-en="Traditional Cuisine" data-kh="ម្ហូប និងនំ">Traditional Cuisine</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-col-nav">
+          <h4 class="footer-title" data-en="Visitor Info" data-kh="ព័ត៌មានអ្នកទស្សនា">Visitor Info</h4>
+          <ul class="footer-links">
+            <li><a href="pagodas.html" data-en="Featured Pagodas" data-kh="វត្តអារាមល្បីៗ">Featured Pagodas</a></li>
+            <li><a href="gallery.html" data-en="Photo Gallery" data-kh="កម្រងរូបភាព">Photo Gallery</a></li>
+            <li><a href="guide.html" data-en="Etiquette Guide" data-kh="ការណែនាំ និងក្រមសីលធម៌">Etiquette Guide</a></li>
+            <li><a href="calendar.html" data-en="Festival Dates" data-kh="កាលបរិច្ឆេទតាមឆ្នាំ">Festival Dates</a></li>
+            <li><a href="contact.html" data-en="Contact & Feedback" data-kh="ទំនាក់ទំនង">Contact & Feedback</a></li>
+          </ul>
+        </div>
+
+        <!-- Ancestral Blessing Card -->
+        <div class="footer-col-blessing">
+          <div class="footer-blessing-card">
+            <h4 class="footer-title" style="margin-bottom: 12px;" data-en="Ancestral Blessing" data-kh="ពរជ័យសិរីមង្គល">Ancestral Blessing</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-line-height: 1.7; margin-bottom: 16px;" data-en="May the merits gathered across all pagodas bring peace, prosperity, longevity, and liberation to your family and ancestors." data-kh="សូមកុសលផលបុណ្យដែលបានសាង ប្រទាននូវពរជ័យ សិរីសួស្តី អាយុយឺនយូរ និងសេចក្តីសុខក្សេមក្សាន្តដល់លោកអ្នក និងក្រុមគ្រួសារ។">
+              May the merits gathered across all pagodas bring peace, prosperity, longevity, and liberation to your family and ancestors.
+            </p>
+            <span class="badge badge-gold" style="font-size: 0.85rem; padding: 6px 14px;">☸️ សាធុ! សាធុ! សាធុ!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Pchum Ben Cultural Heritage Portal. All rights reserved.
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="guide.html" style="color: var(--text-muted);" data-en="Visitor Etiquette" data-kh="ក្រមសីលធម៌">Visitor Etiquette</a>
+          <span>•</span>
+          <a href="calendar.html" style="color: var(--text-muted);" data-en="Lunar Calendar" data-kh="ប្រតិទិនចន្ទគតិ">Lunar Calendar</a>
+          <span>•</span>
+          <a href="contact.html" style="color: var(--text-muted);" data-en="Share Stories" data-kh="ចែករំលែក">Share Stories</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="lib/lightbox/lightbox.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lang-switch.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

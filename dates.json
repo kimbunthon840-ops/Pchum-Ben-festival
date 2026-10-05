@@ -1,0 +1,75 @@
+{
+  "currentYear": 2026,
+  "years": [
+    {
+      "year": 2024,
+      "kannBenStart": "2024-09-18",
+      "kannBenEnd": "2024-10-01",
+      "pchumBenDay": "2024-10-02",
+      "publicHolidays": ["2024-10-01", "2024-10-02", "2024-10-03"],
+      "lunarMonth": "Bhadrapada (ខែភទ្របទ)",
+      "beYear": 2568,
+      "status": "passed"
+    },
+    {
+      "year": 2025,
+      "kannBenStart": "2025-09-08",
+      "kannBenEnd": "2025-09-21",
+      "pchumBenDay": "2025-09-22",
+      "publicHolidays": ["2025-09-21", "2025-09-22", "2025-09-23"],
+      "lunarMonth": "Bhadrapada (ខែភទ្របទ)",
+      "beYear": 2569,
+      "status": "passed"
+    },
+    {
+      "year": 2026,
+      "kannBenStart": "2026-09-26",
+      "kannBenEnd": "2026-10-09",
+      "pchumBenDay": "2026-10-10",
+      "publicHolidays": ["2026-10-09", "2026-10-10", "2026-10-11"],
+      "lunarMonth": "Bhadrapada (ខែភទ្របទ)",
+      "beYear": 2570,
+      "status": "active"
+    },
+    {
+      "year": 2027,
+      "kannBenStart": "2027-09-16",
+      "kannBenEnd": "2027-09-29",
+      "pchumBenDay": "2027-09-30",
+      "publicHolidays": ["2027-09-29", "2027-09-30", "2027-10-01"],
+      "lunarMonth": "Bhadrapada (ខែភទ្របទ)",
+      "beYear": 2571,
+      "status": "upcoming"
+    },
+    {
+      "year": 2028,
+      "kannBenStart": "2028-10-04",
+      "kannBenEnd": "2028-10-17",
+      "pchumBenDay": "2028-10-18",
+      "publicHolidays": ["2028-10-17", "2028-10-18", "2028-10-19"],
+      "lunarMonth": "Bhadrapada (ខែភទ្របទ)",
+      "beYear": 2572,
+      "status": "upcoming"
+    },
+    {
+      "year": 2029,
+      "kannBenStart": "2029-09-23",
+      "kannBenEnd": "2029-10-06",
+      "pchumBenDay": "2029-10-07",
+      "publicHolidays": ["2029-10-06", "2029-10-07", "2029-10-08"],
+      "lunarMonth": "Bhadrapada (ខែភទ្របទ)",
+      "beYear": 2573,
+      "status": "upcoming"
+    },
+    {
+      "year": 2030,
+      "kannBenStart": "2030-09-12",
+      "kannBenEnd": "2030-09-25",
+      "pchumBenDay": "2030-09-26",
+      "publicHolidays": ["2030-09-25", "2030-09-26", "2030-09-27"],
+      "lunarMonth": "Bhadrapada (ខែភទ្របទ)",
+      "beYear": 2574,
+      "status": "upcoming"
+    }
+  ]
+}

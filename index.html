@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pchum Ben Festival | Cambodian Ancestors' Day Portal</title>
+  <meta name="description" content="Discover Pchum Ben (បុណ្យភ្ជុំបិណ្ឌ), Cambodia's sacred 15-day festival of gratitude, ancestral merit-making, Bos Bay Ben rituals, and vibrant pagoda traditions.">
+  <link rel="icon" type="image/svg+xml" href="img/icons/favicon.svg">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/animate/animate.min.css">
+  <link rel="stylesheet" href="lib/lightbox/lightbox.css">
+  <link rel="stylesheet" href="css/khmer-fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="logo-link">
+        <img src="img/icons/logo.svg" alt="Pchum Ben Sacred Lotus Logo">
+        <div class="brand-text">
+          <span class="brand-title" data-en="PCHUM BEN" data-kh="បុណ្យភ្ជុំបិណ្ឌ">PCHUM BEN</span>
+          <span class="brand-subtitle" data-en="Ancestors' Day" data-kh="ពិធីបុណ្យជាតិខ្មែរ">Ancestors' Day</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <ul class="nav-links" id="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link" data-en="Home" data-kh="ទំព័រដើម">Home</a></li>
+
+        <!-- Pillar 2: Heritage (Dropdown) -->
+        <li class="nav-item nav-dropdown">
+          <a href="about.html" class="nav-link dropdown-toggle" data-en="Heritage" data-kh="មរតក">
+            <span data-en="Heritage" data-kh="មរតក">Heritage</span>
+            <span class="dropdown-caret">▾</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="about.html" class="dropdown-item">
+                <span class="dropdown-icon">☸️</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="About Pchum Ben" data-kh="អំពីបុណ្យភ្ជុំបិណ្ឌ">About Pchum Ben</div>
+                  <div class="dropdown-desc" data-en="Spiritual significance & 7 generations" data-kh="អត្ថន័យ និងបុព្វការីជន ៧ សន្តាន">Spiritual significance & 7 generations</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="history.html" class="dropdown-item">
+                <span class="dropdown-icon">📜</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Origins & Legends" data-kh="ប្រវត្តិ និងរឿងព្រេង">Origins & Legends</div>
+                  <div class="dropdown-desc" data-en="King Bimbisara & the Preta realm" data-kh="រឿងព្រះបាទពិម្ពិសារ និងកំណើតប្រេត">King Bimbisara & the Preta realm</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="timeline.html" class="dropdown-item">
+                <span class="dropdown-icon">📅</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="15 Sacred Days" data-kh="១៥ ថ្ងៃកាន់បិណ្ឌ">15 Sacred Days</div>
+                  <div class="dropdown-desc" data-en="Interactive Kann Ben 1 to Pchum Thom" data-kh="កាលវិភាគពិធីបុណ្យ ១៥ ថ្ងៃពេញ">Interactive Kann Ben 1 to Pchum Thom</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Pillar 3: Traditions (Dropdown) -->
+        <li class="nav-item nav-dropdown">
+          <a href="traditions.html" class="nav-link dropdown-toggle" data-en="Traditions" data-kh="ទំនៀមទម្លាប់">
+            <span data-en="Traditions" data-kh="ទំនៀមទម្លាប់">Traditions</span>
+            <span class="dropdown-caret">▾</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="traditions.html" class="dropdown-item">
+                <span class="dropdown-icon">🪔</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Rituals & Customs" data-kh="ពិធីសាសនា">Rituals & Customs</div>
+                  <div class="dropdown-desc" data-en="Bos Bay Ben, Bangskol, Sand Stupas" data-kh="បោះបាយបិណ្ឌ បង្សុកូល ពូនភ្នំខ្សាច់">Bos Bay Ben, Bangskol, Sand Stupas</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="food.html" class="dropdown-item">
+                <span class="dropdown-icon">🍲</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Sacred Cuisine" data-kh="ម្ហូប និងនំប្រពៃណី">Sacred Cuisine</div>
+                  <div class="dropdown-desc" data-en="Num Ansom, Num Kom, Kralan" data-kh="នំអន្សម នំគម ក្រឡានដុតឫស្សី">Num Ansom, Num Kom, Kralan</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Pillar 4: Pagodas -->
+        <li class="nav-item"><a href="pagodas.html" class="nav-link" data-en="Pagodas" data-kh="វត្តអារាម">Pagodas</a></li>
+
+        <!-- Pillar 5: Gallery -->
+        <li class="nav-item"><a href="gallery.html" class="nav-link" data-en="Gallery" data-kh="កម្រងរូបភាព">Gallery</a></li>
+
+        <!-- Pillar 6: Visitor Info (Dropdown) -->
+        <li class="nav-item nav-dropdown">
+          <a href="guide.html" class="nav-link dropdown-toggle" data-en="Visitor Info" data-kh="ព័ត៌មាន">
+            <span data-en="Visitor Info" data-kh="ព័ត៌មាន">Visitor Info</span>
+            <span class="dropdown-caret">▾</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="guide.html" class="dropdown-item">
+                <span class="dropdown-icon">🧭</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Etiquette & Guide" data-kh="ការណែនាំ និងក្រមសីលធម៌">Etiquette & Guide</div>
+                  <div class="dropdown-desc" data-en="Temple dress codes, dos & don'ts" data-kh="ការស្លៀកពាក់ និងក្រមសីលធម៌វត្ត">Temple dress codes, dos & don'ts</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" class="dropdown-item">
+                <span class="dropdown-icon">🗓️</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Festival Dates" data-kh="កាលបរិច្ឆេទតាមឆ្នាំ">Festival Dates</div>
+                  <div class="dropdown-desc" data-en="2024–2030 lunisolar & holiday schedule" data-kh="កាលវិភាគផ្លូវការ ២០២៤-២០៣០">2024–2030 lunisolar & holiday schedule</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="dropdown-item">
+                <span class="dropdown-icon">✉️</span>
+                <div class="dropdown-text">
+                  <div class="dropdown-title" data-en="Contact & Feedback" data-kh="ទំនាក់ទំនង">Contact & Feedback</div>
+                  <div class="dropdown-desc" data-en="Connect with our cultural team" data-kh="ផ្ញើសារ ឬចូលរួមចំណែក">Connect with our cultural team</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Action Utilities -->
+      <div class="nav-actions">
+        <!-- Global Quick Search Trigger -->
+        <button class="btn-search-trigger" id="btn-search-open" title="Quick Search (Ctrl + K)">
+          <span>🔍</span>
+          <span class="d-none d-md-inline" data-en="Search" data-kh="ស្វែងរក">Search</span>
+          <kbd class="d-none d-lg-inline">Ctrl K</kbd>
+        </button>
+        <!-- Temple Ambiance Bell Audio -->
+        <button class="btn-audio" id="audio-toggle" title="Play Temple Bell Ambiance" aria-label="Toggle Temple Sound">
+          🔔
+        </button>
+        <!-- Language Switcher -->
+        <button class="btn-lang btn-lang-toggle" id="lang-toggle" aria-label="Switch Language">
+          <span class="flag">🌐</span> English
+        </button>
+        <!-- Mobile Drawer Hamburger -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Mobile Menu">
+          &#9776;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Section with Realtime Countdown -->
+  <main id="main-content">
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop">
+        <img src="img/hero/hero-banner.jpg" alt="Pchum Ben Dawn Temple Procession at Sunrise">
+      </div>
+      <div class="hero-overlay"></div>
+      <canvas id="embers-canvas"></canvas>
+      
+      <div class="container hero-content">
+        <div class="hero-tagline fade-in-down">
+          <span class="badge badge-gold">☸️ THERAVADA BUDDHIST HERITAGE</span>
+          <span class="badge badge-pink" data-en="15 Sacred Days" data-kh="១៥ ថ្ងៃដ៏ពិសិដ្ឋ">15 Sacred Days</span>
+        </div>
+
+        <h1 class="hero-title fade-in-up">
+          <span class="gold-accent" data-en="Pchum Ben Festival" data-kh="ពិធីបុណ្យភ្ជុំបិណ្ឌ">Pchum Ben Festival</span><br>
+          <span data-en="Honoring 7 Generations of Ancestors" data-kh="ឧទ្ទិសមហាកុសលជូនបុព្វការីជន ៧ សន្តាន">Honoring 7 Generations of Ancestors</span>
+        </h1>
+
+        <p class="hero-lead fade-in" data-en="Experience Cambodia's most spiritually profound celebration. For 15 days, generations unite across ancient pagodas, offering prayers, light, and merits to departed souls." data-kh="ស្វាគមន៍មកកាន់ទំព័រវប្បធម៌បុណ្យភ្ជុំបិណ្ឌខ្មែរ! រយៈពេល ១៥ ថ្ងៃដែលកូនចៅខ្មែរគ្រប់ទិសទីជួបជុំគ្នានៅតាមទីអារាម ដើម្បីបង្សុកូល បោះបាយបិណ្ឌ និងឧទ្ទិសកុសលដល់ដូនតា។">
+          Experience Cambodia's most spiritually profound celebration. For 15 days, generations unite across ancient pagodas, offering prayers, light, and merits to departed souls.
+        </p>
+
+        <div class="hero-cta fade-in-up">
+          <a href="timeline.html" class="btn-primary" id="explore-timeline-btn" data-en="Explore 15 Days of Kann Ben" data-kh="ស្វែងយល់ ១៥ ថ្ងៃកាន់បិណ្ឌ">
+            Explore 15 Days of Kann Ben &rarr;
+          </a>
+          <a href="traditions.html" class="btn-outline" id="rituals-btn" data-en="Learn Rituals & Bos Bay Ben" data-kh="ពិធីបោះបាយបិណ្ឌ និងទំនៀម">
+            Learn Rituals & Bos Bay Ben
+          </a>
+          
+          <!-- Interactive Merit Gong -->
+          <div class="merit-bell-card">
+            <button class="btn-gong-strike" id="btn-merit-gong" title="Strike the Gong to Dedicate Merit" aria-label="Ring Temple Gong">
+              🪘
+            </button>
+            <div>
+              <div style="font-size: 0.78rem; color: var(--gold-400); font-weight: 700; text-transform: uppercase;">
+                <span data-en="Strike Gong for Merit" data-kh="ទះគងសុំកុសល">Strike Gong for Merit</span>
+              </div>
+              <div style="font-size: 0.92rem; color: #FFF; font-weight: 600;">
+                <span id="merit-count">1,248</span> <span data-en="Blessings Today" data-kh="ពរជ័យថ្ងៃនេះ">Blessings Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Pchum Ben Countdown Widget -->
+        <div class="countdown-wrapper zoom-in" id="countdown-widget">
+          <div class="countdown-header">
+            <span class="countdown-label" id="cd-status-text" data-en="⏳ Countdown to Pchum Ben Day" data-kh="⏳ រាប់ថយក្រោយដល់ថ្ងៃភ្ជុំបិណ្ឌ (ភ្ជុំធំ)">
+              ⏳ Countdown to Pchum Ben Day
+            </span>
+            <span class="badge badge-monk" data-en="Bhadrapada Month" data-kh="ខែភទ្របទ">Bhadrapada Month</span>
+          </div>
+          <div class="countdown-grid">
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-days">--</div>
+              <div class="countdown-unit" data-en="Days" data-kh="ថ្ងៃ">Days</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-hours">--</div>
+              <div class="countdown-unit" data-en="Hours" data-kh="ម៉ោង">Hours</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-minutes">--</div>
+              <div class="countdown-unit" data-en="Minutes" data-kh="នាទី">Minutes</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-seconds">--</div>
+              <div class="countdown-unit" data-en="Seconds" data-kh="វិនាទី">Seconds</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Cultural Stats & Milestones Strip -->
+    <section class="stats-strip">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-icon">📅</span>
+            <div class="stat-number">15</div>
+            <div class="stat-label" data-en="Sacred Days" data-kh="ថ្ងៃពិសិដ្ឋ">Sacred Days</div>
+            <div class="stat-sub" data-en="Kann Ben 1 to Pchum Thom" data-kh="ពីកាន់បិណ្ឌ ១ ដល់ភ្ជុំធំ">Kann Ben 1 to Pchum Thom</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">🌳</span>
+            <div class="stat-number">7</div>
+            <div class="stat-label" data-en="Generations" data-kh="សន្តានញាតិ">Generations</div>
+            <div class="stat-sub" data-en="Honored Ancestral Lineage" data-kh="ឧទ្ទិសកុសលជូនដូនតា">Honored Ancestral Lineage</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">🏛️</span>
+            <div class="stat-number">5,000+</div>
+            <div class="stat-label" data-en="Active Pagodas" data-kh="វត្តអារាមសកម្ម">Active Pagodas</div>
+            <div class="stat-sub" data-en="Across 25 Provinces" data-kh="ទូទាំង ២៥ ខេត្ត-ក្រុង">Across 25 Provinces</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">✨</span>
+            <div class="stat-number">1,000+</div>
+            <div class="stat-label" data-en="Years of Heritage" data-kh="ឆ្នាំនៃប្រពៃណី">Years of Heritage</div>
+            <div class="stat-sub" data-en="Living Theravada Tradition" data-kh="មរតកវប្បធម៌ខ្មែរ">Living Theravada Tradition</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cultural Highlights Section -->
+    <section class="section-padding" id="highlights">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge-gold section-tag" data-en="Sacred Pillars" data-kh="សសរទ្រូងនៃពិធីបុណ្យ">Sacred Pillars</span>
+          <h2 class="section-title" data-en="The Essence of Pchum Ben" data-kh="ខ្លឹមសារស្នូលនៃបុណ្យភ្ជុំបិណ្ឌ">The Essence of Pchum Ben</h2>
+          <p class="section-desc" data-en="A harmonious blend of Theravada Buddhist doctrine, ancestral veneration, and communal harmony that has endured for centuries." data-kh="ការរួមបញ្ចូលគ្នាយ៉ាងពិសិដ្ឋរវាងពុទ្ធឱវាទ ទំនៀមដឹងគុណដូនតា និងសាមគ្គីភាពជាតិខ្មែរដែលបានបន្តរាប់រយឆ្នាំមកហើយ។">
+            A harmonious blend of Theravada Buddhist doctrine, ancestral veneration, and communal harmony that has endured for centuries.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Pillar 1: Bos Bay Ben -->
+          <div class="col-md-4">
+            <div class="card-culture">
+              <div class="card-media">
+                <img src="img/rituals/bos-bay-ben.jpg" alt="Bos Bay Ben Dawn Ritual in Pagoda">
+                <div class="card-media-overlay"></div>
+                <div class="card-tag-float">
+                  <span class="badge badge-gold" data-en="4:00 AM Dawn" data-kh="ម៉ោង ៤ ទៀបភ្លឺ">4:00 AM Dawn</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span>✨ RITUAL OF COMPASSION</span>
+                </div>
+                <h3 class="card-title" data-en="Bos Bay Ben (Throwing Rice Balls)" data-kh="ពិធីបោះបាយបិណ្ឌ">Bos Bay Ben (Throwing Rice Balls)</h3>
+                <p class="card-text" data-en="Walking circumambulation around the sacred temple sanctum before sunrise to toss sesame-rice balls to feed tormented wandering spirits (Preta)." data-kh="ការដើរប្រទក្សិណ ៣ ជុំជុំវិញព្រះវិហារនៅវេលាមុនថ្ងៃរះ ដើម្បីបោះដុំបាយបិណ្ឌលាយល្ង ចែករំលែកទានដល់ពួកប្រេតដែលស្រេកឃ្លាន។">
+                  Walking circumambulation around the sacred temple sanctum before sunrise to toss sesame-rice balls to feed tormented wandering spirits (Preta).
+                </p>
+                <div class="card-footer-action">
+                  <a href="traditions.html#bos-bay-ben" class="link-arrow" data-en="Read Ritual Details &rarr;" data-kh="មើលលម្អិត &rarr;">Read Ritual Details &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Bangskol -->
+          <div class="col-md-4">
+            <div class="card-culture">
+              <div class="card-media">
+                <img src="img/rituals/bangskol.jpg" alt="Buddhist Monks Chanting Bangskol">
+                <div class="card-media-overlay"></div>
+                <div class="card-tag-float">
+                  <span class="badge badge-pink" data-en="Merit Transfer" data-kh="ឧទ្ទិសមហាកុសល">Merit Transfer</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span>☸️ SANGHA BLESSING</span>
+                </div>
+                <h3 class="card-title" data-en="Bangskol & Merit Transfer" data-kh="ពិធីបង្សុកូល និងឧទ្ទិសកុសល">Bangskol & Merit Transfer</h3>
+                <p class="card-text" data-en="Sacred monk chants over white cloth and urns dedicating spiritual merit to relatives up to 7 generations back to free them from suffering." data-kh="ព្រះសង្ឃសូត្រធម៌បង្សុកូលលើសំពត់ស ឬកោដ្ឋអដ្ឋិធាតុ ដើម្បីបញ្ជូនចំណែកបុណ្យដល់ញាតិទាំង ៧ សន្តានឱ្យបានរួចចាកទុក្ខ។">
+                  Sacred monk chants over white cloth and urns dedicating spiritual merit to relatives up to 7 generations back to free them from suffering.
+                </p>
+                <div class="card-footer-action">
+                  <a href="traditions.html#bangskol" class="link-arrow" data-en="Explore Merit Making &rarr;" data-kh="ស្វែងយល់ការធ្វើបុណ្យ &rarr;">Explore Merit Making &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Traditional Culinary -->
+          <div class="col-md-4">
+            <div class="card-culture">
+              <div class="card-media">
+                <img src="img/food/num-ansom.jpg" alt="Traditional Num Ansom Wrapped In Banana Leaf">
+                <div class="card-media-overlay"></div>
+                <div class="card-tag-float">
+                  <span class="badge badge-monk" data-en="Sacred Cuisine" data-kh="នំប្រពៃណីខ្មែរ">Sacred Cuisine</span>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-meta">
+                  <span>🍌 ANCESTRAL OFFERINGS</span>
+                </div>
+                <h3 class="card-title" data-en="Num Ansom & Kralan" data-kh="នំអន្សម និងក្រឡាន">Num Ansom & Kralan</h3>
+                <p class="card-text" data-en="Sticky rice cakes wrapped in fragrant banana leaves with pork belly or bananas, symbolizing fertility, unity, and deep familial bonds." data-kh="នំអន្សមជ្រូក នំអន្សមចេក និងក្រឡានដុតប្ញស្សី ដែលជានិមិត្តរូបនៃភាពសម្បូរសប្បាយ សាមគ្គីភាព និងចំណងគ្រួសារខ្មែរ។">
+                  Sticky rice cakes wrapped in fragrant banana leaves with pork belly or bananas, symbolizing fertility, unity, and deep familial bonds.
+                </p>
+                <div class="card-footer-action">
+                  <a href="food.html" class="link-arrow" data-en="Discover Recipes &rarr;" data-kh="មើលរូបមន្ត និងប្រវត្តិ &rarr;">Discover Recipes &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive 4-Dimension Exploration Hub -->
+    <section class="dimension-section">
+      <div class="container">
+        <div class="section-header text-center mb-4">
+          <span class="badge badge-gold section-tag" data-en="Interactive Cultural Hub" data-kh="ស្វែងយល់តាមវិមាត្រវប្បធម៌">Interactive Cultural Hub</span>
+          <h2 class="section-title" data-en="Explore Pchum Ben in 4 Dimensions" data-kh="ស្វែងយល់ពីពិធីបុណ្យ ៤ វិមាត្រ">Explore Pchum Ben in 4 Dimensions</h2>
+          <p class="section-desc" style="max-width: 720px; margin: 0 auto;" data-en="Click each dimension below to discover the living traditions, sacred delicacies, spiritual sanctuaries, and the 15-day timeline." data-kh="ចុចលើផ្ទាំងនីមួយៗខាងក្រោម ដើម្បីស្វែងយល់ពីពិធីសាសនា ម្ហូបប្រពៃណី វត្តអារាម និងកាលវិភាគពិធីបុណ្យ។">
+            Click each dimension below to discover the living traditions, sacred delicacies, spiritual sanctuaries, and the 15-day timeline.
+          </p>
+        </div>
+
+        <!-- Dimension Navigation Tabs -->
+        <div class="dimension-nav" id="dimension-tabs">
+          <button class="dimension-tab-btn active" data-target="dim-rituals">
+            <span class="tab-icon">🪔</span> <span data-en="Sacred Rituals" data-kh="ពិធីសាសនា">Sacred Rituals</span>
+          </button>
+          <button class="dimension-tab-btn" data-target="dim-cuisine">
+            <span class="tab-icon">🍲</span> <span data-en="Heritage Cuisine" data-kh="ម្ហូប និងនំ">Heritage Cuisine</span>
+          </button>
+          <button class="dimension-tab-btn" data-target="dim-pagodas">
+            <span class="tab-icon">🏛️</span> <span data-en="Spiritual Wats" data-kh="វត្តអារាមល្បីៗ">Spiritual Wats</span>
+          </button>
+          <button class="dimension-tab-btn" data-target="dim-schedule">
+            <span class="tab-icon">📅</span> <span data-en="15-Day Schedule" data-kh="កាលវិភាគ ១៥ ថ្ងៃ">15-Day Schedule</span>
+          </button>
+        </div>
+
+        <!-- Dimension Tab Panes -->
+        <div class="dimension-content">
+          <!-- Pane 1: Sacred Rituals -->
+          <div class="dimension-content-pane active" id="dim-rituals">
+            <div class="row g-4">
+              <!-- Ritual 1: Bos Bay Ben -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/rituals/bos-bay-ben.jpg" alt="Bos Bay Ben Dawn Pagoda Ritual">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-gold">✨ 4:00 AM Dawn</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>RITUAL OF COMPASSION</span>
+                    </div>
+                    <h3 class="card-title" data-en="Bos Bay Ben (Throwing Rice Balls)" data-kh="ពិធីបោះបាយបិណ្ឌ">Bos Bay Ben (Throwing Rice Balls)</h3>
+                    <p class="card-text" data-en="Devotees circumambulate the temple 3 times before sunrise, tossing sanctified sesame rice balls under the morning stars to nourish wandering ancestral spirits (Preta)." data-kh="ការដើរប្រទក្សិណ ៣ ជុំជុំវិញព្រះវិហារនៅវេលាមុនថ្ងៃរះ ដើម្បីបោះដុំបាយបិណ្ឌលាយល្ង ចែករំលែកទានដល់ពួកប្រេតដែលស្រេកឃ្លាន។">
+                      Devotees circumambulate the temple 3 times before sunrise, tossing sanctified sesame rice balls under the morning stars to nourish wandering ancestral spirits (Preta).
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="traditions.html#bos-bay-ben" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="Explore Ceremony &rarr;" data-kh="ស្វែងយល់ពិធី &rarr;">
+                        Explore Ceremony &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ritual 2: Bangskol -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/rituals/bangskol.jpg" alt="Monks Chanting Bangskol Requiem">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-pink">☸️ Sangha Blessing</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>MERIT TRANSFER</span>
+                    </div>
+                    <h3 class="card-title" data-en="Bangskol & Merit Transfer" data-kh="ពិធីបង្សុកូល និងឧទ្ទិសកុសល">Bangskol & Merit Transfer</h3>
+                    <p class="card-text" data-en="Buddhist monks chant sacred Pali verses over family ancestral urns and white cloth, transmuting worldly good deeds directly into spiritual relief for 7 generations." data-kh="ព្រះសង្ឃសូត្រធម៌បង្សុកូលលើសំពត់ស ឬកោដ្ឋអដ្ឋិធាតុ ដើម្បីបញ្ជូនចំណែកបុណ្យដល់ញាតិទាំង ៧ សន្តានឱ្យបានរួចចាកទុក្ខ។">
+                      Buddhist monks chant sacred Pali verses over family ancestral urns and white cloth, transmuting worldly good deeds directly into spiritual relief for 7 generations.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="traditions.html#bangskol" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="Explore Bangskol &rarr;" data-kh="ស្វែងយល់ការបង្សុកូល &rarr;">
+                        Explore Bangskol &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ritual 3: Sand Mountain -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/rituals/candle-procession.jpg" alt="Devotees Sculpting Sand Mountain Stupas">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-monk">⛰️ Karma Cleansing</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>MOUNT MERU SYMBOLISM</span>
+                    </div>
+                    <h3 class="card-title" data-en="Phnum Khsach (Sand Mountain)" data-kh="ពិធីពូនភ្នំខ្សាច់">Phnum Khsach (Sand Mountain)</h3>
+                    <p class="card-text" data-en="Devotees sculpt five decorative sand stupas in pagoda courtyards representing Mount Meru and the five Buddhas, dissolving as many sins as there are grains of sand." data-kh="ការរួមគ្នាពូនខ្សាច់ជារូបចេតិយចំនួន ៥ តំណាងឱ្យភ្នំព្រះសុមេរុ និងព្រះពុទ្ធទាំង ៥ ព្រះអង្គ ដើម្បីរំដោះបាបកម្ម និងសន្សំកុសល។">
+                      Devotees sculpt five decorative sand stupas in pagoda courtyards representing Mount Meru and the five Buddhas, dissolving as many sins as there are grains of sand.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="traditions.html#sand-mountain" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="View Symbolism &rarr;" data-kh="ស្វែងយល់អត្ថន័យ &rarr;">
+                        View Symbolism &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 2: Heritage Cuisine -->
+          <div class="dimension-content-pane" id="dim-cuisine">
+            <div class="row g-4">
+              <!-- Food 1: Num Ansom Chek -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/food/num-ansom.jpg" alt="Num Ansom Chek Banana Rice Cake">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-gold">🍌 Sweet Delicacy</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>SYMBOL OF FERTILITY</span>
+                    </div>
+                    <h3 class="card-title" data-en="Num Ansom Chek" data-kh="នំអន្សមចេក">Num Ansom Chek</h3>
+                    <p class="card-text" data-en="Cylindrical sticky rice cake packed with sweet baby bananas, bound tightly with split bamboo and boiled over wood fires for 8 to 10 hours." data-kh="នំអន្សមចេកខ្មែរ រុំដោយស្លឹកចេកស្រស់ និងចងខ្សែបន្ទះឫស្សីយ៉ាងផ្ចិតផ្ចង់ ចម្អិនដោយដាំស្ងោរលើចង្ក្រានអុសពេញមួយយប់។">
+                      Cylindrical sticky rice cake packed with sweet baby bananas, bound tightly with split bamboo and boiled over wood fires for 8 to 10 hours.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="food.html#num-ansom" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="View Recipe & Story &rarr;" data-kh="មើលរូបមន្ត &rarr;">
+                        View Recipe & Story &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Food 2: Num Kom -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/food/num-korm.jpg" alt="Num Kom Pyramid Sticky Rice Cake">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-pink">🔺 Pyramid Shape</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>COSMIC FEMININE DUALITY</span>
+                    </div>
+                    <h3 class="card-title" data-en="Num Kom (Pyramid Cake)" data-kh="នំគម">Num Kom (Pyramid Cake)</h3>
+                    <p class="card-text" data-en="Pyramidal rice dumplings stuffed with roasted grated coconut and caramelized palm sugar, representing goddess Uma and the sacred earth." data-kh="នំគមរាងសាជីជ្រុង តំណាងឱ្យព្រះម៉ែឧមា និងជាតង្វាយដ៏ពិសិដ្ឋសម្រាប់ឧទ្ទិសដល់ដូនតាស្រីៗក្នុងពិធីបុណ្យ។">
+                      Pyramidal rice dumplings stuffed with roasted grated coconut and caramelized palm sugar, representing goddess Uma and the sacred earth.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="food.html#num-kom" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="Discover Num Kom &rarr;" data-kh="ស្វែងយល់នំគម &rarr;">
+                        Discover Num Kom &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Food 3: Kralan -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/food/kralan.jpg" alt="Kralan Bamboo Sticky Rice Roasted Over Embers">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-monk">🎋 Charcoal Roasted</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>KRATIE & BATTAMBANG SPECIALTY</span>
+                    </div>
+                    <h3 class="card-title" data-en="Kralan in Bamboo" data-kh="ក្រឡានដុតបំពង់ឫស្សី">Kralan in Bamboo</h3>
+                    <p class="card-text" data-en="Fragrant sticky rice, black beans, coconut cream, and a pinch of salt packed inside young bamboo stalks and roasted over glowing charcoal." data-kh="អង្ករដំណើបលាយសណ្តែកខ្មៅ ខ្ទិះដូង និងស្ករត្នោត ច្រកក្នុងបំពង់ឫស្សីខ្ចី រួចដុតលើរងើកភ្លើងរហូតដល់ឈ្ងុយឆ្ងាញ់។">
+                      Fragrant sticky rice, black beans, coconut cream, and a pinch of salt packed inside young bamboo stalks and roasted over glowing charcoal.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="food.html#kralan" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="Explore Kralan Heritage &rarr;" data-kh="ស្វែងយល់ក្រឡាន &rarr;">
+                        Explore Kralan Heritage &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 3: Spiritual Pagodas -->
+          <div class="dimension-content-pane" id="dim-pagodas">
+            <div class="row g-4">
+              <!-- Pagoda 1: Wat Ounalom -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/pagodas/wat-ounalom.jpg" alt="Wat Ounalom Pagoda in Phnom Penh">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-gold">🏛️ Founded 1443</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>BUDDHIST PATRIARCHATE</span>
+                    </div>
+                    <h3 class="card-title" data-en="Wat Ounalom (Phnom Penh)" data-kh="វត្តឧណ្ណាលោម">Wat Ounalom (Phnom Penh)</h3>
+                    <p class="card-text" data-en="The supreme spiritual headquarters of Cambodian Buddhism beside the Tonle Sap river, enshrining an ancient stupa with a sacred Buddha eyebrow relic." data-kh="ទីស្នាក់ការគណៈសង្ឃនាយកនៃព្រះពុទ្ធសាសនាកម្ពុជា ស្ថិតនៅក្បែរមាត់ទន្លេសាប មានចេតិយបុរាណតម្កល់ព្រះឧណ្ណាលោម។">
+                      The supreme spiritual headquarters of Cambodian Buddhism beside the Tonle Sap river, enshrining an ancient stupa with a sacred Buddha eyebrow relic.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="pagodas.html" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="View Monastery Info &rarr;" data-kh="មើលព័ត៌មានវត្ត &rarr;">
+                        View Monastery Info &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pagoda 2: Wat Phnom -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/pagodas/wat-phnom.jpg" alt="Wat Phnom Historic Stupa Hill">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-pink">🌳 Historic Birthplace</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>SACRED CAPITAL SHRINE</span>
+                    </div>
+                    <h3 class="card-title" data-en="Wat Phnom Daun Penh" data-kh="វត្តភ្នំដូនពេញ">Wat Phnom Daun Penh</h3>
+                    <p class="card-text" data-en="Founded by Lady Penh in 1372 upon a tree-crowned hill, welcoming thousands of devotees each year offering flowers, lotus, and incense for good fortune." data-kh="ទីកន្លែងកំណើតនៃរាជធានីភ្នំពេញ ដែលកសាងឡើងដោយដូនពេញក្នុងឆ្នាំ ១៣៧២ ជាទីគោរពសក្ការៈដ៏ស័ក្តិសិទ្ធិរបស់ប្រជាជនខ្មែរ។">
+                      Founded by Lady Penh in 1372 upon a tree-crowned hill, welcoming thousands of devotees each year offering flowers, lotus, and incense for good fortune.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="pagodas.html" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="View Wat Phnom &rarr;" data-kh="មើលវត្តភ្នំ &rarr;">
+                        View Wat Phnom &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pagoda 3: Angkor Pagoda -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/pagodas/angkor-pagoda.jpg" alt="Active Monasteries around Angkor Heritage">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-monk">🏯 Angkor Heritage</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>SIEM REAP SACRED PARK</span>
+                    </div>
+                    <h3 class="card-title" data-en="Angkor Pagodas (Siem Reap)" data-kh="វត្តអារាមតំបន់អង្គរ">Angkor Pagodas (Siem Reap)</h3>
+                    <p class="card-text" data-en="Active Theravada monasteries set amidst the thousand-year-old stone temples, where monks conduct pre-dawn Bos Bay Ben chanting under ancient jungle canopies." data-kh="វត្តអារាមសកម្មដែលស្ថិតក្នុងរមណីយដ្ឋានអង្គរ ជាទីដែលពិធីបោះបាយបិណ្ឌប្រារព្ធឡើងយ៉ាងស្ងប់ស្ងាត់ និងស័ក្តិសិទ្ធិបំផុត។">
+                      Active Theravada monasteries set amidst the thousand-year-old stone temples, where monks conduct pre-dawn Bos Bay Ben chanting under ancient jungle canopies.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="pagodas.html" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="Explore All Pagodas &rarr;" data-kh="ស្វែងរកវត្តទាំងអស់ &rarr;">
+                        Explore All Pagodas &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pane 4: 15-Day Schedule -->
+          <div class="dimension-content-pane" id="dim-schedule">
+            <div class="row g-4">
+              <!-- Schedule 1: 14 Days -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/rituals/tak-bat.jpg" alt="Daily Morning Almsgiving Kann Ben Procession">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-gold">🕯️ Days 1 – 14</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>COMMUNITY SPONSORSHIP</span>
+                    </div>
+                    <h3 class="card-title" data-en="The 14 Days of Kann Ben" data-kh="១៤ ថ្ងៃនៃកាន់បិណ្ឌ">The 14 Days of Kann Ben</h3>
+                    <p class="card-text" data-en="Each day rotated among different village families sponsoring monastery meals, circumambulation, and merit dedications from 1 to 14 Roch Bhadrapada." data-kh="ការប្តូរវេនគ្នាតាមគ្រួសារ និងភូមិ ដើម្បីឧបត្ថម្ភចង្ហាន់ដល់ព្រះសង្ឃ និងធ្វើពិធីបុណ្យជាប់ៗគ្នារយៈពេល ១៤ ថ្ងៃពេញ។">
+                      Each day rotated among different village families sponsoring monastery meals, circumambulation, and merit dedications from 1 to 14 Roch Bhadrapada.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="timeline.html" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="Open 15-Day Tracker &rarr;" data-kh="បើកកាលវិភាគ &rarr;">
+                        Open 15-Day Tracker &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Schedule 2: Pchum Thom -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/hero/hero-banner.jpg" alt="Pchum Thom Festival Climax with Devotees">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-pink">🌟 Day 15 (Pchum Thom)</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>NATIONAL CLIMAX</span>
+                    </div>
+                    <h3 class="card-title" data-en="Pchum Thom Grand Finale" data-kh="ថ្ងៃភ្ជុំធំ (១៥ រោច)">Pchum Thom Grand Finale</h3>
+                    <p class="card-text" data-en="The ultimate festival day when all Cambodians dress in white, return to ancestral home provinces, and visit up to 7 pagodas to complete their filial duties." data-kh="ថ្ងៃចុងក្រោយនៃពិធីបុណ្យ ដែលពលរដ្ឋខ្មែរគ្រប់រូបស្លៀកសពាក់ស ធ្វើដំណើរទៅស្រុកកំណើតជួបជុំបងប្អូន និងទៅវត្តអារាម។">
+                      The ultimate festival day when all Cambodians dress in white, return to ancestral home provinces, and visit up to 7 pagodas to complete their filial duties.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="timeline.html#day-15" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="Discover Pchum Thom &rarr;" data-kh="ស្វែងយល់ថ្ងៃភ្ជុំធំ &rarr;">
+                        Discover Pchum Thom &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Schedule 3: 2026 Calendar -->
+              <div class="col-md-4">
+                <div class="card-culture">
+                  <div class="card-media" style="height: 195px;">
+                    <img src="img/rituals/bangskol.jpg" alt="Pchum Ben Calendar Dates and Schedule">
+                    <div class="card-media-overlay"></div>
+                    <div class="card-tag-float">
+                      <span class="badge badge-monk">📅 Oct 9 – 11, 2026</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-meta">
+                      <span>VERIFIED DATES & HOLIDAYS</span>
+                    </div>
+                    <h3 class="card-title" data-en="2026 Official Festival Schedule" data-kh="កាលបរិច្ឆេទឆ្នាំ ២០២៦">2026 Official Festival Schedule</h3>
+                    <p class="card-text" data-en="Verified lunisolar dates, 3-day official Cambodian national public holidays, Buddhist Era (B.E. 2570), and 1-click Google Calendar sync." data-kh="កាលបរិច្ឆេទផ្លូវការ ថ្ងៃឈប់សម្រាកជាតិ ៣ ថ្ងៃ ពុទ្ធសករាជ ២៥៧០ និងប៊ូតុងបញ្ចូលក្នុង Google Calendar ដោយងាយស្រួល។">
+                      Verified lunisolar dates, 3-day official Cambodian national public holidays, Buddhist Era (B.E. 2570), and 1-click Google Calendar sync.
+                    </p>
+                    <div class="card-footer-action mt-auto pt-3">
+                      <a href="calendar.html" class="btn-outline w-100 text-center" style="font-size: 0.88rem; padding: 10px 16px;" data-en="Open 2026 Spotlight &rarr;" data-kh="មើលប្រតិទិន ២០២៦ &rarr;">
+                        Open 2026 Spotlight &rarr;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 15 Days Interactive Preview Callout -->
+    <section class="section-padding" style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="badge badge-gold mb-3" data-en="Kann Ben 1 to 15" data-kh="កាន់បិណ្ឌ ១ ដល់ ១៥">Kann Ben 1 to 15</span>
+            <h2 style="font-size: 2.4rem; color: #FFF; margin-bottom: 20px; line-height: 1.25;" data-en="A Journey Through the 15 Sacred Days" data-kh="ដំណើរឆ្លងកាត់ ១៥ ថ្ងៃដ៏ពិសិដ្ឋនៃពិធីបុណ្យ">
+              A Journey Through the 15 Sacred Days
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;" data-en="From the first drum beats of Kann Ben Day 1 to the grand feast and water buffalo races of Pchum Thom (Day 15), each day carries profound rituals, offerings, and blessings." data-kh="ចាប់តាំងពីសំឡេងស្គរវត្តនៃកាន់បិណ្ឌទី១ រហូតដល់ថ្ងៃភ្ជុំធំ និងការជួបជុំគ្រួសារដ៏មហោឡារិក ថ្ងៃនីមួយៗសុទ្ធតែមានកាលវិភាគពិធីបុណ្យ និងអត្ថន័យជ្រាលជ្រៅ។">
+              From the first drum beats of Kann Ben Day 1 to the grand feast and water buffalo races of Pchum Thom (Day 15), each day carries profound rituals, offerings, and blessings.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="timeline.html" class="btn-primary" data-en="Open Interactive Timeline" data-kh="បើកកាលវិភាគអន្តរកម្ម">Open Interactive Timeline &rarr;</a>
+              <a href="pagodas.html" class="btn-outline" data-en="Find Pagodas Near You" data-kh="ស្វែងរកវត្តអារាម">Find Pagodas Near You</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div style="position: relative; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-gold); box-shadow: var(--shadow-gold-lg);">
+              <img src="img/pagodas/wat-ounalom.jpg" alt="Wat Ounalom Pagoda in Cambodia" style="width: 100%; height: 380px; object-fit: cover;">
+              <div style="position: absolute; bottom: 0; inset-inline: 0; padding: 24px; background: linear-gradient(180deg, transparent, rgba(7, 10, 18, 0.95));">
+                <span class="badge badge-pink" data-en="7 Pagodas Tradition" data-kh="ទំនៀមដើរ ៧ វត្ត">7 Pagodas Tradition</span>
+                <p style="color: #FFF; font-weight: 600; margin-top: 8px;" data-en="Devotees visit up to 7 different pagodas on Pchum Thom to ensure no ancestor is left without merit." data-kh="ពុទ្ធបរិស័ទតែងដើរធ្វើបុណ្យរហូតដល់ ៧ វត្ត ដើម្បីប្រាកដថាដូនតាមិនខកខានក្នុងការទទួលបុណ្យ។">
+                  Devotees visit up to 7 different pagodas on Pchum Thom to ensure no ancestor is left without merit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cultural Quote Banner -->
+    <section class="section-padding text-center">
+      <div class="container" style="max-width: 860px;">
+        <div style="font-size: 3rem; color: var(--gold-400); line-height: 1; margin-bottom: 12px;">☸️</div>
+        <blockquote style="font-size: clamp(1.2rem, 2.5vw, 1.6rem); color: #FFF; font-style: italic; line-height: 1.6; margin-bottom: 24px;" data-en="&ldquo;Those who express gratitude to their parents and ancestors plant the deepest seeds of fortune, peace, and spiritual protection for their descendants.&rdquo;" data-kh="&ldquo;អ្នកណាដែលដឹងគុណ និងតបស្នងសងគុណមាតាបិតា និងបុព្វការីជន គឺជាអ្នកដែលបណ្តុះនូវគ្រាប់ពូជនៃសេចក្តីសុខ ចម្រើន និងមង្គលដ៏ឧត្តមបំផុត។&rdquo;">
+          &ldquo;Those who express gratitude to their parents and ancestors plant the deepest seeds of fortune, peace, and spiritual protection for their descendants.&rdquo;
+        </blockquote>
+        <cite style="color: var(--gold-300); font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.1em;" data-en="— Traditional Khmer Buddhist Wisdom" data-kh="— ពុទ្ធឱវាទ និងសុភាសិតបុរាណខ្មែរ">
+          — Traditional Khmer Buddhist Wisdom
+        </cite>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-col-brand">
+          <a href="index.html" class="brand-logo mb-3">
+            <img src="img/icons/logo.svg" alt="Pchum Ben Logo">
+            <div class="brand-text">
+              <span class="brand-title">PCHUM BEN</span>
+              <span class="brand-subtitle">Cultural Portal</span>
+            </div>
+          </a>
+          <p class="footer-desc" data-en="A dedicated cultural encyclopedia preserving and sharing the living traditions, sacred rituals, and spiritual beauty of Cambodia's Pchum Ben Ancestors' Day festival." data-kh="គេហទំព័រផ្សព្វផ្សាយ និងអភិរក្សវប្បធម៌ ប្រពៃណី និងជំនឿសាសនាដ៏ពិសិដ្ឋនៃពិធីបុណ្យភ្ជុំបិណ្ឌខ្មែរ។">
+            A dedicated cultural encyclopedia preserving and sharing the living traditions, sacred rituals, and spiritual beauty of Cambodia's Pchum Ben Ancestors' Day festival.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col-nav">
+          <h4 class="footer-title" data-en="Explore" data-kh="ទំព័រ">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" data-en="About Festival" data-kh="អំពីបុណ្យ">About Festival</a></li>
+            <li><a href="history.html" data-en="Origins & History" data-kh="ប្រវត្តិ និងរឿងព្រេង">Origins & History</a></li>
+            <li><a href="timeline.html" data-en="15-Day Timeline" data-kh="កាលវិភាគ ១៥ ថ្ងៃ">15-Day Timeline</a></li>
+            <li><a href="traditions.html" data-en="Rituals & Customs" data-kh="ទំនៀមទម្លាប់">Rituals & Customs</a></li>
+            <li><a href="food.html" data-en="Traditional Cuisine" data-kh="ម្ហូប និងនំ">Traditional Cuisine</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-col-nav">
+          <h4 class="footer-title" data-en="Visitor Info" data-kh="ព័ត៌មានអ្នកទស្សនា">Visitor Info</h4>
+          <ul class="footer-links">
+            <li><a href="pagodas.html" data-en="Featured Pagodas" data-kh="វត្តអារាមល្បីៗ">Featured Pagodas</a></li>
+            <li><a href="gallery.html" data-en="Photo Gallery" data-kh="កម្រងរូបភាព">Photo Gallery</a></li>
+            <li><a href="guide.html" data-en="Etiquette Guide" data-kh="ការណែនាំ និងក្រមសីលធម៌">Etiquette Guide</a></li>
+            <li><a href="calendar.html" data-en="Festival Dates" data-kh="កាលបរិច្ឆេទតាមឆ្នាំ">Festival Dates</a></li>
+            <li><a href="contact.html" data-en="Contact & Feedback" data-kh="ទំនាក់ទំនង">Contact & Feedback</a></li>
+          </ul>
+        </div>
+
+        <!-- Ancestral Blessing Card -->
+        <div class="footer-col-blessing">
+          <div class="footer-blessing-card">
+            <h4 class="footer-title" style="margin-bottom: 12px;" data-en="Ancestral Blessing" data-kh="ពរជ័យសិរីមង្គល">Ancestral Blessing</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin-bottom: 16px;" data-en="May the merits gathered across all pagodas bring peace, prosperity, longevity, and liberation to your family and ancestors." data-kh="សូមកុសលផលបុណ្យដែលបានសាង ប្រទាននូវពរជ័យ សិរីសួស្តី អាយុយឺនយូរ និងសេចក្តីសុខក្សេមក្សាន្តដល់លោកអ្នក និងក្រុមគ្រួសារ។">
+              May the merits gathered across all pagodas bring peace, prosperity, longevity, and liberation to your family and ancestors.
+            </p>
+            <span class="badge badge-gold" style="font-size: 0.85rem; padding: 6px 14px;">☸️ សាធុ! សាធុ! សាធុ!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Pchum Ben Cultural Heritage Portal. All rights reserved.
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="guide.html" style="color: var(--text-muted);">Visitor Etiquette</a>
+          <span>•</span>
+          <a href="calendar.html" style="color: var(--text-muted);">Lunar Calendar</a>
+          <span>•</span>
+          <a href="contact.html" style="color: var(--text-muted);">Share Stories</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="lib/lightbox/lightbox.js"></script>
+  <script src="js/data-store.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lang-switch.js"></script>
+  <script src="js/countdown.js"></script>
+</body>
+</html>
